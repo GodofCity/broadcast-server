@@ -38,7 +38,7 @@ router.get("/", (req, res) => {
         .outputOptions("-c:v copy")
         .outputOptions("-c:a copy")
         .format("mp4")
-        // .on("stderr", (stderrLine) => console.error("ffmpeg stderr:", stderrLine))
+        .on("stderr", (stderrLine) => console.error("ffmpeg stderr:", stderrLine))
         .on("end", () => console.log("Stream ended"))
         .on("error", (err) => {
             console.error("Error during streaming", err);

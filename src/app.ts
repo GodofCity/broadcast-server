@@ -8,11 +8,10 @@ import controlRouter from "./routes/control";
 import streamRouter from "./routes/stream";
 
 
-export const videoPath = path.join(__dirname, "movie", "deadpool2.mp4");
+export const videoPath = path.join(__dirname, "movie", "example.mp4");
 export const pausedVideoPath = path.join(__dirname, "movie", "paused.mp4");
 
-
-const PORT = 3000;
+const PORT = 80;
 const app = express();
 app.use(express.json());
 app.use(nocache());
