@@ -29,7 +29,7 @@ You need to open a CMD/Bash and navigate to the folder where you downloaded the 
 npm run dev
 ```
 
-Just put the video into movie folder and change the videoPath variable to the right movie title. That's all! You need to use MP4 video format.
+Just put the video into movie folder and change the videoFileName property in `config/Config.ts` to the right movie title. That's all! You need to use MP4 video format.
 
 #### API
 ```

@@ -6,12 +6,13 @@ import nocache from "nocache";
 import { setVideoDuration } from "./shared";
 import controlRouter from "./routes/control";
 import streamRouter from "./routes/stream";
+import { Config } from "./config/config";
 
 
-export const videoPath = path.join(__dirname, "movie", "example.mp4");
-export const pausedVideoPath = path.join(__dirname, "movie", "paused.mp4");
+export const videoPath = path.join(__dirname, "movie", Config.videoFileName);
+export const pausedVideoPath = path.join(__dirname, "movie", Config.pauseVideoFileName);
 
-const PORT = 8080;
+const PORT = Config.PORT;
 const app = express();
 app.use(express.json());
 app.use(nocache());
