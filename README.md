@@ -1,8 +1,8 @@
-Hello Adventurer.
+### Hello Adventurer.
 
 You have two options to run this application.
 
-1. Docker
+##### 1. Docker
 
 if you have Windows, you will need to download Docker Desktop from this link: https://www.docker.com/products/docker-desktop/
 
@@ -17,7 +17,7 @@ If you successfully built the image, you just need to start the container with a
 docker compose up
 ```
 
-2. NodeJS
+##### 2. NodeJS
 
 You will need to download NodeJS and ffmpeg to do this way. 
 NodeJS: https://nodejs.org/en
