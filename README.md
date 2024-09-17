@@ -31,7 +31,7 @@ npm run dev
 
 Just put the video into movie folder and change the videoPath variable to the right movie title. That's all! You need to use MP4 video format.
 
-API
+##### API
 ```
 localhost:3000/stream - Streaming the video, if it's started
 localhost:3000/play - It starts the video
